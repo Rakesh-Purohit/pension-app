@@ -1,0 +1,70 @@
+
+<div *ngIf="showFlag==1">
+  <form #userName="ngForm" (ngSubmit)="onClickSubmit(userName.value)"> 
+    <input type="text" name="username" placeholder="username" ngModel> 
+    <br/> 
+    <input type="password" name="password" placeholder="password" ngModel> 
+    <br/> 
+    <input type="submit" value="submit"> 
+  
+    
+  </form>
+  
+
+</div>
+
+
+
+
+
+
+<div *ngIf="showFlag==2" >
+  <form #userName2="ngForm" (ngSubmit)="onClickSubmit2(userName2.value)"> 
+    <input type="text" name="aadharNumber" placeholder="aadharNumber" ngModel> 
+    <br/> 
+    
+    <br/> 
+    <input type="submit" value="submit"> 
+  
+    
+  </form>
+</div>
+
+
+
+
+
+
+
+
+<div *ngIf="showFlag==3">
+
+  <h2>PENSIONER DETAILS:</h2>
+
+<p>Aadhar Number: {{pensionDetails?.aadharNumber}}</p>
+<p>Name: {{pensionDetails?.name}}</p>
+<p>Date Of Birth: {{pensionDetails?.date_of_birth}}</p>
+<p>Pan: {{pensionDetails?.pan}}</p>
+<p>Salary Earned: {{pensionDetails?.salaryEarned}}</p>
+<p>Allowances: {{pensionDetails?.allowances}}</p>
+<p>Self Pesnion: {{pensionDetails?.selfPension}}</p>
+<p>Family Pension: {{pensionDetails?.familyPension}}</p>
+<p>Pension Type: {{pensionDetails?.pensionType}}</p>
+<p>Bank Name: {{pensionDetails?.bankName}}</p>
+<p>Bank Account Number: {{pensionDetails?.bankAccountNumber}}</p>
+
+
+<h2>PENSIONER PROCESS:</h2>
+
+ <p>Pension Amount: {{pensionProcess}}</p> 
+
+
+
+
+
+
+
+</div>
+
+
+
